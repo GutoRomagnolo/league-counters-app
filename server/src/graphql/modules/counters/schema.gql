@@ -1,0 +1,6 @@
+type Counters {
+  id: ID!
+  champion: Champion
+  severity: String
+  description: String
+}

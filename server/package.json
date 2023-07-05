@@ -1,0 +1,28 @@
+{
+  "name": "league-toplane-counters-server",
+  "version": "1.0.0",
+  "description": "League of Legends top lane matchups and counters",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GutoRomagnolo/league-toplane-counters.git"
+  },
+  "author": "GutoRomagnolo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GutoRomagnolo/league-toplane-counters/issues"
+  },
+  "homepage": "https://github.com/GutoRomagnolo/league-toplane-counters#readme",
+  "dependencies": {
+    "@apollo/server": "^4.7.5",
+    "graphql": "^16.7.1",
+    "knex": "^2.4.2",
+    "pg": "^8.11.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}

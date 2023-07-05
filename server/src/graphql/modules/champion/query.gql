@@ -1,0 +1,4 @@
+type Query {
+  champions: [Champion]
+  champion(id: ID!): Champion
+}
