@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url = env("DATABASE_URL")
+}
+
+model Champion {
+  id          String @id @default(cuid())
+  name        String
+  image       String
+  title       String
+  sound       String
+  counteredBy Counter[]
+}
+
+model Counter {
+  id                   String   @id @default(cuid())
+  counterChampionId    String   @default(cuid())
+  matchupDescription   String
+  counterChampion      Champion @relation(fields: [counterChampionId], references: [id])
+}
