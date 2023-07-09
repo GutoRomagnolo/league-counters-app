@@ -24,8 +24,8 @@ describe('DbCreateChampion usecase', () => {
     expect(createChampionRepositorySpy.params).toEqual({
       name: createChampionParams.name,
       image: createChampionParams.image,
-      title: createChampionParams.name,
-      sound: createChampionParams.image
+      title: createChampionParams.title,
+      sound: createChampionParams.sound
     })
   })
 })
