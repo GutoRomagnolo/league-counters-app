@@ -1,3 +1,4 @@
+import 'module-alias/register'
 import env from '@/main/config/env'
 import { PrismaHelper } from '@/infra/database'
 
